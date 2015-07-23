@@ -1,4 +1,78 @@
 @import 'AS-framework';
+$navbgcolor: #f2f2f2;
+
+/*this resets the body of the page
+so that the browser's specifications
+doesn't affect mine*/
+body {
+  margin: 5px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*SagandaStrap title*/
+header {
+  color: blue;
+  font-size: 60px;
+}
+/*this holds the nav-desc*/
+#container {
+  width: 110px;
+  height: 20px;
+  background-color: #FFFFCC;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+/*this is div class="nav"*/
+#nav-desc {
+  text-align: center;
+  padding-bottom: 10px;
+}
+/*this is the entire navbar*/
+.nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color:$navbgcolor;
+  border-bottom: 1px solid #ccc;
+}
+/*this is the list of links*/
+.nav ul {
+  list-style: none;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+/*this is each list item*/
+.nav li {
+  float: left;
+}
+/*this is each link tag*/
+.nav li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-right: 1px solid #ccc;
+}
+/*this is the first link in the 
+list designated with by the 
+term first*/
+.nav li:first-child a {
+  border-left: 1px solid #ccc; 
+}
+/*this is when the mouse hovers
+over a link in the list*/
+.nav li a:hover {
+  color: #c00;
+  background-color: #fff;
+}
+
 
 #example-rounded{
   @include rounded-button(7px);
