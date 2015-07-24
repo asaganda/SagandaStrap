@@ -21,10 +21,14 @@ header {
   display: table;
   table-layout: fixed;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #ccc; }
 
 .tab_item {
-  display: table-cell; }
+  display: table-cell;
+  border-right: 1px solid #ccc; }
+  .tab_item:hover {
+    background-color: #FF0000; }
 
 /*this holds the nav-desc*/
 #container {

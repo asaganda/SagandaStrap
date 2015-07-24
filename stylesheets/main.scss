@@ -27,13 +27,16 @@ header {
   table-layout: fixed;
   width: 100%;
   text-align: center;
+  border: 1px solid #ccc;
 }
 
 .tab_item {
   display: table-cell;
+  border-right: 1px solid #ccc;
+    &:hover { 
+      background-color: #FF0000;
+    }
 }
-
-
 
 
 
