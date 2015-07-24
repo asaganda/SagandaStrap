@@ -14,6 +14,18 @@ header {
   color: blue;
   font-size: 60px; }
 
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center; }
+
+.tab_item {
+  display: table-cell; }
+
 /*this holds the nav-desc*/
 #container {
   width: 110px;
@@ -28,13 +40,19 @@ header {
   padding-bottom: 10px; }
 
 /*this is the entire navbar*/
+/*this can be modified*/
 .nav {
   width: 100%;
   float: left;
   margin: 0 0 1em 0;
   padding: 0;
   background-color: #f2f2f2;
-  border-bottom: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  display: table;
+  table-layout: fixed; }
+
+.tab {
+  display: table-cell; }
 
 /*this is the list of links*/
 .nav ul {
