@@ -1,3 +1,13 @@
+// each tab's characteristics(font, background color when
+// hovered over and border color)
+@mixin tab-item($tab-font,$tab_color){
+  font-family: $tab-font;
+  border-right: 1px solid #ccc;
+    &:hover { 
+      background-color: $tab_color;
+    }
+}
+
 @mixin rounded-button($radius){
   cursor: pointer;
   border-radius: $radius;
