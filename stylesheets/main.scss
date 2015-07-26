@@ -45,6 +45,16 @@ header {
   display: table-cell;
 }
 
+.tabs2 {
+  @extend .tabs;
+}
+
+.tab_item2 {
+  @extend .tab_item;
+  @include tab-item('Dancing Script', purple);
+  font-size: 200%;
+}
+
 
 #example-rounded{
   @include rounded-button(7px);
