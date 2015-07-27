@@ -6,14 +6,19 @@ body {
   margin: 5px;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  font-size: 115%;
+  font-family: 'BenchNine', sans-serif;
+  vertical-align: baseline;
+  background-image: url(/Users/andrewsaganda/Desktop/NYCDA/Week-7/Wednesday/SagandaStrap/background.png); }
 
 /*SagandaStrap title*/
 header {
-  color: blue;
-  font-size: 60px; }
+  color: coral;
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive; }
+
+h1 {
+  font-family: 'BenchNine', sans-serif; }
 
 /*the full nav bar*/
 .tabs, .tabs2 {
@@ -32,7 +37,7 @@ header {
   background-color: lightblue; }
 
 /*each tab and its properties*/
-.tab_item, .tab_item2 {
+.tab_item, .tab_item2, .dropdown {
   /*  this is tapping into the _mixins.scss 
     via _AS-framework.scss via the @import 
     'AS-framework' at the top*/
@@ -41,15 +46,31 @@ header {
   /*this allows the tabs to become equal sizes in the full bar,
   such as cells in a table hence the property name*/
   display: table-cell; }
-  .tab_item:hover, .tab_item2:hover {
-    background-color: green; }
+  .tab_item:hover, .tab_item2:hover, .dropdown:hover {
+    background-color: #99FFCC; }
 
-.tab_item2 {
-  font-family: "Dancing Script";
+.tabs2 {
+  background-color: coral; }
+
+.tab_item2, .dropdown {
+  font-family: "Amatic SC";
   border-right: 1px solid #ccc;
-  font-size: 200%; }
-  .tab_item2:hover {
-    background-color: purple; }
+  font-size: 50px; }
+  .tab_item2:hover, .dropdown:hover {
+    background-color: #99FFCC; }
+
+.dropdown {
+  position: relative; }
+
+.drop-nav {
+  position: absolute;
+  display: none; }
+
+.drop-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.dropdown:hover > .drop-nav {
+  display: block; }
 
 #example-rounded {
   cursor: pointer;
